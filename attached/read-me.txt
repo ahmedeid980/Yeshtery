@@ -10,4 +10,6 @@ password:  ahmedZidan12
 - please create folder in C:// called -> yeshteryImg
 
 
+- run all tables of schema in mysql
+
 Thank you
