@@ -1,0 +1,17 @@
+.register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .register-content {
+        padding: 20px;
+        border: 1px solid #542e90;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgb(230, 230, 230);
+    }
+
+    .marginBottom {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,19 @@
+.nav-color {
+    background-color: #542e90 !important;
+
+    .nav-link {
+        color: white;
+        font-weight: bolder;
+        margin-left: 15px;
+    }
+
+}
+
+/* product component*/
+.content {
+    display: flex !important;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}

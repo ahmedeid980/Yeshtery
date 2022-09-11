@@ -1,0 +1,23 @@
+<div class="container">
+    
+
+      <div class="card">
+        <div class="card-header">
+          Product
+        </div>
+        <div class="card-body">
+            <img class="card-img-left" width="250" src="data:image/jpeg;base64,{{product?.photoPath}}">
+          <div class="title">
+            <h5 class="card-title">{{product?.category}}</h5>
+            <p class="card-text">{{product?.description}}</p>
+            
+            <div class="buttons" style="margin-top: 50px;" *ngIf="user.roleCode == 1">
+                <a class="btn btn-primary" (click)="Acceptance(product.id)">Accept</a>
+                <a class="btn btn-danger" (click)="rejected(product.id)" style="margin-left: 5px;">Reject</a>
+            </div>
+          </div>
+        </div>
+        <a [routerLink]="['/Yeshtery']" style="margin-left: 5px;">Go Back Home</a>
+      </div>
+
+    </div>

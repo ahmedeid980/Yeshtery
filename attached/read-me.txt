@@ -1,0 +1,13 @@
+DB: 
+-------
+url:  jdbc:mysql://localhost:3306/yeshtery
+username:  developer
+password:  ahmedZidan12
+
+
+-------------------------------------------------
+
+- please create folder in C:// called -> yeshteryImg
+
+
+Thank you

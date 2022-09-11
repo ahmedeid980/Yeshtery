@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg nav-color">
+    <a class="navbar-brand" href="#" style="margin-left: 10px;"><img width="100" src="../assets/img/brand-logo-yellow.svg" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]='["/Yeshtery"]'> Home </a>
+        </li>
+        <li class="nav-item" *ngIf="adminStatus">
+          <a class="nav-link" [routerLink]="['/Yeshtery/administrator']">Aministrator</a>
+        </li>
+        <li class="nav-item" *ngIf="!adminStatus">
+          <a class="nav-link" [routerLink]="['/Yeshtery/product']">Add Product</a>
+        </li>
+        <li class="nav-item" *ngIf="!pageStatus">
+          <a class="nav-link" [routerLink]='["/Yeshtery/login"]'>Login</a>
+        </li>
+        <li class="nav-item" *ngIf="!pageStatus">
+          <a class="nav-link" [routerLink]='["/Yeshtery/register"]'>Register</a>
+        </li>
+        <li class="nav-item" *ngIf="pageStatus" >
+          <a class="nav-link" (click)="logout()" style="cursor: pointer;">Logout</a>
+        </li>
+      </ul>
+  
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="content">
+      <router-outlet></router-outlet>
+      
+    </div>
+  </div>

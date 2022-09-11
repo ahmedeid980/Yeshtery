@@ -1,0 +1,17 @@
+.content-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .supermarket-content-fields {
+        padding: 5%;
+        border: 1px solid rebeccapurple;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px rgb(227, 227, 227);
+
+        .form-content-input {
+            margin-bottom: 10%;
+        }
+    }
+}

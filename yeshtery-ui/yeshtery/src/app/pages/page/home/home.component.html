@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="content">
+      <div class="card" style="width: 18rem;" *ngFor="let product of products">
+        <img class="card-img-top" src="data:image/jpeg;base64,{{product?.photoPath}}">
+        <div class="card-body">
+          <h5 class="card-title" style="cursor: pointer;" (click)="openAdminUpdatePage(product.id)">{{product?.category}}</h5>
+          <p class="card-text">{{product?.description}}</p>
+        </div>
+      </div>
+  
+      <div class="not-found" style="text-align: center;" *ngIf="products?.length == 0">
+        <h1>NO PRODUCT FOUND</h1>
+      </div>
+      
+    </div>
+  </div>

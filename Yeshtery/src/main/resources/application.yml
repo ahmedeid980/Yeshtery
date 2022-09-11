@@ -1,0 +1,17 @@
+server:
+  port: 7007
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yeshtery
+    username: developer
+    password: ahmedZidan12
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+
+image:
+  path: C://yeshteryImg

@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="content-product">
+        <div class="supermarket-content-fields">
+            <form [formGroup]="formGroup">
+                <div class="form-content-input">
+                  <span class="label">Category</span>
+                  <select name="dog-names" id="dog-names" formControlName='category' required s>
+                    <option value="living thing">living thing</option>
+                    <option value="machine">machine</option>
+                    <option value="natural">natural</option>
+                </select>
+                </div>
+                <div class="form-content-input">
+                  <span class="label" for="description">Description</span>
+                  <input type="text" class="form-control" placeholder="Description" formControlName='description' id="description" required>
+                </div>
+                <div class="input-group form-content-input">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="file03" #fileImage (change)="addProductImage($event)">
+                    <label class="custom-file-label" for="file03"></label>
+                  </div>
+                </div>
+      
+              <div class="row">
+                <button type="button" class="btn btn-success button" (click)='saveNewProduct()'>
+                  Save Product
+                </button>
+
+                <a [routerLink]='["/Yeshtery"]'> Go Back Home </a>
+                
+              </div>
+      
+            </form>
+          </div>
+    </div>
+</div>
